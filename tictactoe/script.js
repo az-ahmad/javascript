@@ -99,8 +99,48 @@ boxnine.addEventListener('dblclick',function(){
     boxnine.innerHTML = "<strong>O</strong>"
 })
 
-if (boxone.textContent==='X' && boxtwo.textContent==='X' && boxthree.textContent==='X'){
-    header.innerHTML = "<style color='blue><strong>X Wins!</strong></style>"
-    alert('Player X wins!')
+document.addEventListener('click',function(){
+    setTimeout(function() {
+        if (boxone.textContent==='X' && boxtwo.textContent==='X' && boxthree.textContent==='X'){
+            alert('Player X wins!')
+        } else if (boxone.textContent==='X' && boxfive.textContent==='X' && boxnine.textContent==='X'){
+            alert('Player X wins!')
+        } else if (boxone.textContent==='X' && boxfour.textContent==='X' && boxtseven.textContent==='X'){
+            alert('Player X wins!')
+        } else if (boxtwo.textContent==='X' && boxfive.textContent==='X' && boxeight.textContent==='X'){
+            alert('Player X wins!')
+        } else if (boxthree.textContent==='X' && boxsix.textContent==='X' && boxnine.textContent==='X'){
+            alert('Player X wins!')
+        } else if (boxone.textContent==='X' && boxfour.textContent==='X' && boxseven.textContent==='X'){
+            alert('Player X wins!')
+        } else if (boxfour.textContent==='X' && boxfive.textContent==='X' && boxsix.textContent==='X'){
+            alert('Player X wins!')
+        } else if (boxseven.textContent==='X' && boxeight.textContent==='X' && boxnine.textContent==='X'){
+            alert('Player X wins!')
+        } else if (boxthree.textContent==='X' && boxfive.textContent==='X' && boxseven.textContent==='X'){
+            alert('Player X wins!')
+        }}, 1500);
+})
 
-}
+document.addEventListener('dblclick',function(){
+    setTimeout(function() {
+        if (boxone.textContent==='O' && boxtwo.textContent==='O' && boxthree.textContent==='O'){
+            alert('Player O wins!')
+        } else if (boxone.textContent==='O' && boxfive.textContent==='O' && boxnine.textContent==='O'){
+            alert('Player O wins!')
+        } else if (boxone.textContent==='O' && boxfour.textContent==='O' && boxtseven.textContent==='O'){
+            alert('Player O wins!')
+        } else if (boxtwo.textContent==='O' && boxfive.textContent==='O' && boxeight.textContent==='O'){
+            alert('Player O wins!')
+        } else if (boxthree.textContent==='O' && boxsix.textContent==='O' && boxnine.textContent==='O'){
+            alert('Player O wins!')
+        } else if (boxone.textContent==='O' && boxfour.textContent==='O' && boxseven.textContent==='O'){
+            alert('Player O wins!')
+        } else if (boxfour.textContent==='O' && boxfive.textContent==='O' && boxsix.textContent==='O'){
+            alert('Player O wins!')
+        } else if (boxseven.textContent==='O' && boxeight.textContent==='O' && boxnine.textContent==='O'){
+            alert('Player O wins!')
+        } else if (boxthree.textContent==='XO' && boxfive.textContent==='O' && boxseven.textContent==='O'){
+            alert('Player O wins!')
+        }}, 1500);
+})
