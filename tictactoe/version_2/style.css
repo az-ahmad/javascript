@@ -1,0 +1,12 @@
+.col{
+    border: 2px solid black;
+    text-align: center;
+    padding: 80px 0px 80px 0px;
+    font-size: xx-large;
+}
+
+.row{
+    border: 2px solid black;
+    max-width: 60%;
+    margin: auto auto auto auto;
+}
